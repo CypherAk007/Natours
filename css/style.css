@@ -7,15 +7,19 @@ Dark green: #28b485
 
 */
 
-*{
+*,
+*::after,
+*::before{
     margin:0;
     padding:0;
     box-sizing: border-box ;
 }
 /* converting pixels to rems */
 /* root pixels */
+/* now convert this also to % as browser default -> 16px == 100% so 10px==? (62.5%) */
 html{
-    font-size: 10px;
+    /* font-size: 10px; */
+    font-size: 62.5%;
 }
 body{
     font-family: "Lato",sans-serif;

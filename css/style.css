@@ -47,7 +47,7 @@ body{
     
 }
 
-.logo-box{
+.header__logo-box{
     position: absolute;
     top:4rem;
     left: 4rem;
@@ -55,7 +55,7 @@ body{
 }
 
 
-.logo{
+.header__logo{
     height: 3.5rem;
 }
 
@@ -71,7 +71,7 @@ body{
 
 /* left:50%;top:40%; -> are in relation with parent and 
 transform:translate(-50%,-50%) acts wrt child(itself)ele not parent */
-.text-box{
+.header__text-box{
     position: absolute;
     left:50%;
     top:40%;
@@ -80,7 +80,7 @@ transform:translate(-50%,-50%) acts wrt child(itself)ele not parent */
 }
 
 /* display:block - acuriers width and new line for next ele */
-.heading-primary-main{
+.heading-primary--main{
     display: block;
     font-size: 6rem;
     font-weight: 400;
@@ -96,7 +96,7 @@ transform:translate(-50%,-50%) acts wrt child(itself)ele not parent */
     
 }
 
-.heading-primary-sub{
+.heading-primary--sub{
     display: block;
     font-size: 2.4rem;
     font-weight: 700;
@@ -172,7 +172,7 @@ transform:translate(-50%,-50%) acts wrt child(itself)ele not parent */
     transform: translateY(-.1rem);
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
 }
-.btn-white{
+.btn--white{
     background-color: white;
     color: #777;
 }
@@ -204,7 +204,7 @@ transform:translate(-50%,-50%) acts wrt child(itself)ele not parent */
 
 /* animation:moveInBottom .5s ease-out .75s; ->(name,duration,time-func,delay) */
 /* animation-fill-mode: backwards; applys animation before page loads */
-.btn-animated{
+.btn--animated{
     animation:moveInBottom .5s ease-out .75s;
     animation-fill-mode: backwards;
 }

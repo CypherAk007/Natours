@@ -57,6 +57,7 @@ body{
     text-transform: uppercase;
     backface-visibility: hidden;
     
+    margin-bottom: 35px;
 }
 
 /* left:50%;top:40%; -> are in relation with parent and 
@@ -66,7 +67,7 @@ transform:translate(-50%,-50%) acts wrt child(itself)ele not parent */
     left:50%;
     top:40%;
     transform:translate(-50%,-50%);
-    
+    text-align: center;
 }
 
 /* display:block - acuriers width and new line for next ele */
@@ -96,6 +97,7 @@ transform:translate(-50%,-50%) acts wrt child(itself)ele not parent */
       animation-name: moveInRight;
       animation-duration: 1s;
       animation-timing-function: ease-out;
+
 }
 
 @keyframes moveInLeft {
@@ -124,4 +126,30 @@ transform:translate(-50%,-50%) acts wrt child(itself)ele not parent */
         opacity: 1;
         transform: translate(0);
     }
+}
+
+
+/* display: inline-block; makes the element as seprate block used when we need padding and margin */
+.btn:link,
+.btn:visited{
+    
+    text-transform: uppercase;
+    padding: 15px 40px;
+    text-decoration: none;
+    border-radius: 100px;
+    display: inline-block;
+    transition: all .2s;
+}
+/* box-shadow: 0 10px 20px; -> (x , y, blur) */
+.btn:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);;
+}
+.btn:active{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+.btn-white{
+    background-color: white;
+    color: #777;
 }

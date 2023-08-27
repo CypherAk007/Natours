@@ -42,16 +42,20 @@ body{
     position: absolute;
     top:40px;
     left: 40px;
+    
 }
+
 
 .logo{
     height: 35px;
 }
 
+
+/* backface-visibility: hidden; for avoiding shaking of text  */
 .heading-primary{
     color: #fff;
     text-transform: uppercase;
-    
+    backface-visibility: hidden;
     
 }
 
@@ -71,7 +75,14 @@ transform:translate(-50%,-50%) acts wrt child(itself)ele not parent */
     font-size: 60px;
     font-weight: 400;
     letter-spacing: 35px;
+
+    /* animation */
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
     
+    /* animation-delay: 3s;
+    animation-iteration-count: 3; */
     
 }
 
@@ -80,4 +91,37 @@ transform:translate(-50%,-50%) acts wrt child(itself)ele not parent */
     font-size: 24px;
     font-weight: 700;
     letter-spacing: 15px;
+
+      /* animation */
+      animation-name: moveInRight;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
+}
+
+@keyframes moveInLeft {
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    80%{
+        transform: translateX(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    80%{
+        transform: translateX(-10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
 }

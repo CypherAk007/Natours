@@ -1,0 +1,93 @@
+
+
+.btn{
+
+    /* display: inline-block; makes the element as seprate block used when we need padding and margin */
+    &:link,
+    &:visited{
+        
+        text-transform: uppercase;
+        padding: 1.5rem 4rem;
+        text-decoration: none;
+        border-radius: 10rem;
+        display: inline-block;
+        transition: all .2s;
+        position: relative;
+    }
+    /* box-shadow: 0 10px 20px; -> (x , y, blur) */
+    &:hover{
+        transform: translateY(-1rem);
+        box-shadow: 0 1rem 2rem rgba($color-black, .2);
+
+
+        &::after{
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+    &:active{
+        transform: translateY(-.1rem);
+        box-shadow: 0 .5rem 1rem rgba($color-black, .2);
+    }
+    &--white{
+        background-color: $color-white;
+        color: $color-grey-dark;
+
+        &::after{
+            background-color: white;
+        }
+    }
+
+    /* after psudo element -> adds virtual element after an element  */
+    /* after-> needs content and dispaly prop */
+    /* z-index: -1; tell this element is behind the other element  */
+    &:after{
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
+
+    
+
+
+    /* animation:moveInBottom .5s ease-out .75s; ->(name,duration,time-func,delay) */
+    /* animation-fill-mode: backwards; applys animation before page loads */
+    &--animated{
+        animation:moveInBottom .5s ease-out .75s;
+        animation-fill-mode: backwards;
+    }
+}
+
+
+.btn-text{
+    &:link,
+    &:visited{
+        text-decoration: none;
+        color: $color-primary;
+        padding: 3px;
+        font-weight: 300;
+        font-family: sans-serif;
+        display: inline-block;
+        font-size: $default-font-size;
+        border-bottom: 1px solid $color-primary;
+        transition: all .2s;
+    }
+    &:hover{
+        background-color: $color-primary;
+        transform: translateY(-2px);
+        box-shadow: 0 1rem 2rem rgba(0,0,0,.15);
+        color: #fff;
+    }
+    &:active{
+        transform: translateY(0);
+        box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+    }
+
+}

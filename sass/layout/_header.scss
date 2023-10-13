@@ -1,0 +1,39 @@
+/* gradient = 0.8 for transparency and img url is after the gradinet */
+/* vh-> viewport height
+ -> clippy website for shapes cordintates and polygon takes corrdinates in clockwise direction */
+
+.header{
+    height: 95vh;
+    background-image: linear-gradient(to right bottom,
+    rgba($color-primary-light, 0.8),rgba( $color-primary-dark,0.806)),
+    url(../img/hero-small.jpg);
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0,100% 0,100% 75vh,0 100%);
+    position: relative;
+
+    &__logo-box{
+        position: absolute;
+        top:4rem;
+        left: 4rem;
+        
+    }
+    
+    
+    &__logo{
+        height: 3.5rem;
+    }
+
+    /* left:50%;top:40%; -> are in relation with parent and 
+    transform:translate(-50%,-50%) acts wrt child(itself)ele not parent */
+    &__text-box{
+        position: absolute;
+        left:50%;
+        top:40%;
+        transform:translate(-50%,-50%);
+        text-align: center;
+    }
+    
+}
+
+

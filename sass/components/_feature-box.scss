@@ -9,7 +9,7 @@
     // margin-left: 30px;
     transition: transform .2s;
     &:not(:last-child){
-        margin-right: -30rem;
+        margin-right: -25rem;
     }
     &__icon{
         font-size: 6rem;
@@ -25,6 +25,6 @@
         
     }
     &__text{
-
+        // display: flex;
     }
 }

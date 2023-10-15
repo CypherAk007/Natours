@@ -19,6 +19,7 @@
     }
     &--img{
         // background-color: orangered;
+        // top: 50;
         flex:1
     }
 }
@@ -41,3 +42,19 @@
     justify-content: space-around;
     
 }
+
+
+.section-tour{
+    background-color: $color-grey-light-1;
+    padding: 25rem 0 50rem 0;
+    margin-top: -13rem;
+
+    &__cards{
+        display: flex;
+        justify-content: center;
+        // padding: 20px;
+        gap:10rem;
+        
+    }
+}
+

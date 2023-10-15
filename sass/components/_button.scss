@@ -38,6 +38,14 @@
         }
     }
 
+    &--green{
+        background-color: $color-primary;
+        color: $color-white;
+
+        &::after{
+            background-color: $color-primary;
+        }
+    }
     /* after psudo element -> adds virtual element after an element  */
     /* after-> needs content and dispaly prop */
     /* z-index: -1; tell this element is behind the other element  */

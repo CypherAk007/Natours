@@ -118,6 +118,9 @@ body {
 .u-margin-bottom-small {
   margin-bottom: 1.5rem; }
 
+.u-margin-top-huge {
+  margin-top: 10rem; }
+
 .btn {
   /* display: inline-block; makes the element as seprate block used when we need padding and margin */
   /* box-shadow: 0 10px 20px; -> (x , y, blur) */
@@ -148,6 +151,11 @@ body {
     color: #777; }
     .btn--white::after {
       background-color: white; }
+  .btn--green {
+    background-color: #55c57a;
+    color: #ffff; }
+    .btn--green::after {
+      background-color: #55c57a; }
   .btn:after {
     content: "";
     display: inline-block;
@@ -274,6 +282,8 @@ body {
     height: 23rem;
     background-blend-mode: screen;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
     .card__picture--1 {
       background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/nat-5.jpg); }

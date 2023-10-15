@@ -68,12 +68,17 @@ body{
 }
 
 .heading-tertiary{
-    padding: 0 3rem;
+    padding: 0 10rem;
     font-size: $default-font-size;
     font-weight: 700;
     text-transform: uppercase;
 }
-
+.heading-tertiary--npad{
+    // padding: 0 10rem;
+    font-size: $default-font-size;
+    font-weight: 700;
+    text-transform: uppercase;
+}
 .paragraph{
     font-size:$default-font-size;
     padding: 0 10rem;

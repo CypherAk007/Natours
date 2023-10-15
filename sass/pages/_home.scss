@@ -43,10 +43,20 @@
     
 }
 
+.story-row{
+    display: flex;
+    // justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:15rem;
+    
+}
+
 
 .section-tour{
     background-color: $color-grey-light-1;
-    padding: 25rem 0 50rem 0;
+    padding: 25rem 0 5rem 0;
     margin-top: -13rem;
 
     &__cards{
@@ -58,3 +68,9 @@
     }
 }
 
+
+.section-stories{
+    padding: 15rem 0;
+    background-color: $color-grey-light-1;
+    // background-color: orangered;
+}

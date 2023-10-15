@@ -6,6 +6,7 @@
     padding-left: 9rem;
     font-size: $default-font-size;
     transform: skewX(-12deg);
+    
     &__shape{
         width: 15rem;
         height:  15rem;
@@ -16,11 +17,24 @@
         shape-outside: circle(50% at 50% 50%);
         clip-path: circle(50% at 50% 50%);
         transform: translateX(-3rem) skewX(12deg);
+        position: relative;
     }
     &__img{
         height: 100%;
     }
     &__text{
         transform: skewX(12deg);
+    }
+    &__caption{
+        background-color: orangered;
+        color: $color-white;
+        // color:black;
+        text-transform: uppercase;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        font-size: 1.7rem;
     }
 }
